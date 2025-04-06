@@ -38,8 +38,6 @@ Unlike CoreML, I had no prior knowledge of SSMs. To build my understanding, I fo
 - **References**:
   - [Annotated S4](https://srush.github.io/annotated-s4/)
   - [Albert Gu's [Author] blogs](https://hazyresearch.stanford.edu/blog/2022-01-14-s4-1)
-https://srush.github.io/annotated-s4/
-
 
 ---
 
