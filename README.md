@@ -1,20 +1,39 @@
-This repo contains the following work related to the assignment given by SaiDL.
+This repository contains work related to the assignment given by SaiDL. The following topics are covered:
 
-1) CoreML
+1. CoreML
+2. State Space Models (SSM)
+The repository includes Jupyter Notebook (.ipynb) files and LaTeX documentation for both topics. Below, I provide a brief overview of my observations for each project.
 
-2) State Space Models
+1. CoreML
+This project involved the implementation of APL frameworks to test robustness in the presence of noisy datasets.
 
-I have attached ipynb files and Latex documentation for both of them . However I will covering brief details about some of my observations.
+Learning about Losses:
+I was aware of losses but unfamiliar with their classifications, such as active and passive loss. To address this, I familiarized myself with these loss types. After reviewing the referenced paper, I understood why this framework is being tested—it helps strike a balance between active and passive losses to avoid overshooting by relying solely on one type.
 
----------------------------------------------------------------------------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------------------------------------------------------
+Dataset Preparation:
+I prepared datasets for both symmetrical and asymmetrical noise. Initially, I expected better performance on asymmetrical data since changes made for any class were fixed and deterministic. However, this expectation was not met.
 
-1)CoreML
-This project involved the implementation of APL frameworks to check robustness in case of noisy datasets.I was aware of losses but didn't know their classifications, such as active and passive loss. So, I familiarised myself with all the mentioned losses. After reviewing the paper, I realized why this framework is being tested. It helps us find a middle ground between both types of losses so that we don't overshoot by using just one of them.
+Key Observations:
 
-I prepared the dataset accordingly for symmetrical and asymmetrical noise. Initially i expected better performance on asymmetrical data as in these the changes we made for any class was fixed so it was deterministic. However, I realised that not to be the case,I tried to dig deeper into it; what I found was symmetric noise is easier to handle due to uniformity; asymmetric noise poses more significant challenges due to structured bias and class imbalance. However, I am still not entirely sure or convinced why this is the case.
+Symmetric noise is easier to handle due to its uniformity.
 
-2)SSM
-Unlike the CoreML project, I had never heard of SSM before . So initially, I went through various blogs to understand what they are (maths was daunting; I tried to get the intuition behind most maths used in the paper). I was going through an Updated version of CS231n by Umichigan(taught by the same instructor).
-I covered the Attention mechanism behind Transformers to get a broad idea. Then, I referred to blogs by the Author and Annotated the S4 paper.These two provided a sufficient understanding of SSM.
-For the training part, I couldn't replicate the paper's results. The number of layers I used, Epochs,and other parameters were pretty less compared to that in the paper, but I still trained it various times with varying parameters to have Proof of Work.
+Asymmetric noise presents greater challenges because of structured bias and class imbalance.
+
+While I understand this reasoning, I am still not entirely convinced why symmetric noise performs better.
+
+2. State Space Models (SSM)
+Unlike CoreML, I had no prior knowledge of SSMs. To build my understanding, I followed these steps:
+
+Learning Phase:
+
+Explored various blogs to grasp the concepts (the mathematics was daunting, so I focused on building intuition).
+
+Studied an updated version of CS231n by the University of Michigan (taught by the same instructor) to understand the attention mechanism behind Transformers.
+
+Referred to blogs by the author and annotated the S4 paper for a deeper understanding.
+
+Training Phase:
+
+While training, I couldn’t replicate the results from the paper due to limitations in parameters such as the number of layers, epochs, etc.
+
+Despite this, I trained the model multiple times with varying parameters to provide proof of work.
