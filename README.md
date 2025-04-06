@@ -30,10 +30,16 @@ Unlike CoreML, I had no prior knowledge of SSMs. To build my understanding, I fo
   - Explored various blogs to grasp the concepts (the mathematics was daunting, so I focused on building intuition).
   - Studied an updated version of CS231n by the University of Michigan (taught by the same instructor) to understand the attention mechanism behind Transformers.
   - Referred to blogs by the author and The annotated S4 paper for a deeper understanding.
-
+ 
 - **Training Phase**:
   - While training, I couldn’t replicate the results from the paper due to limitations in parameters such as the number of layers, epochs, etc.
   - Despite this, I trained the model multiple times with varying parameters to provide proof of work.
+
+- **References**:
+  - [Annotated S4](https://srush.github.io/annotated-s4/)
+  - [Albert Gu's [Author] blogs](https://hazyresearch.stanford.edu/blog/2022-01-14-s4-1)
+https://srush.github.io/annotated-s4/
+
 
 ---
 
